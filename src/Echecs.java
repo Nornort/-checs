@@ -1,7 +1,7 @@
 /**
  * Created by francois on 09/05/17.
  */
-A
+import java.utils.scanner;
 public class Echecs {
     public static void main(String, args){
 
