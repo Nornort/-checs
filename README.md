@@ -1,2 +1,2 @@
-# -checs
+# Echecs
 Jeu d'échecs
