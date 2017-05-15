@@ -5,14 +5,16 @@ public class Plateau {
     public Piece[][] plateau = new Piece[8][8];
 
     public Plateau() {
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j ++) {
+                plateau[i][j] = new Piece(false, 0);
+            }
+        }
         for (int i = 0; i < 8; i += 7) {
             boolean couleur = false;
             int k = 0;
             if(i == 7) couleur = true;
             if (i == 7) k = 1;
-            for (int j = 0; j < 8; j ++) {
-                plateau[i][j] = new Piece(couleur, 0);
-            }
             for (int j = 0; j < 8; j += 7) {
                 plateau[i][j] = new Tour(couleur);
             }
