@@ -5,6 +5,7 @@ public class Affichage {
     public static void afficher(Piece[][] tableau){
         for(int i=0;i<8;i++){
             for(int j=0;j<8;j++){
+                System.out.print("|");
                 if(tableau[i][j].type == 0 )
                     System.out.print("  ");
                 if(tableau[i][j].type == 1 )
@@ -19,9 +20,8 @@ public class Affichage {
                     System.out.print("Pi");
                 if(tableau[i][j].type == 6 )
                     System.out.print("To");
-                System.out.print("|");
             }
-            System.out.println(" ");
+            System.out.println("|");
         }
     }
 }
