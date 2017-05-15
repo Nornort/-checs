@@ -3,7 +3,7 @@
  */
 public class Piece {
     public boolean couleur;
-    public int type;
+    public int type = 0;
     public Piece(boolean couleur0,int type0){
         couleur = couleur0;
         type = type0;
