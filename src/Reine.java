@@ -3,6 +3,6 @@
  */
 public class Reine extends Piece{
     public Reine(boolean couleur){
-        super(couleur);
+        super(couleur,3);
     }
 }
