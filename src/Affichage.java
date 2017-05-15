@@ -6,21 +6,22 @@ public class Affichage {
         for(int i=0;i<8;i++){
             for(int j=0;j<8;j++){
                 if(tableau[i][j].type == 0 )
-                    System.out.println("  ");
+                    System.out.print("  ");
                 if(tableau[i][j].type == 1 )
-                    System.out.println("Ca");
+                    System.out.print("Ca");
                 if(tableau[i][j].type == 2 )
-                    System.out.println("Fo");
+                    System.out.print("Fo");
                 if(tableau[i][j].type == 3 )
-                    System.out.println("Re");
+                    System.out.print("Re");
                 if(tableau[i][j].type == 4 )
-                    System.out.println("Ro");
+                    System.out.print("Ro");
                 if(tableau[i][j].type == 5 )
-                    System.out.println("Pi");
+                    System.out.print("Pi");
                 if(tableau[i][j].type == 6 )
-                    System.out.println("To");
-                System.out.println("|");
+                    System.out.print("To");
+                System.out.print("|");
             }
+            System.out.println(" ");
         }
     }
 }
