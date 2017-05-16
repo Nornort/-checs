@@ -7,6 +7,6 @@ public class Echecs {
         Scanner sc = new Scanner(System.in);
         Plateau jeu = new Plateau();
         Affichage.afficher(jeu.plateau);
-        int str = sc.nextInt();
+        String str = sc.nextLine();
     }
 }
