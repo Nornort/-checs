@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1892af0f-dcff-407b-bda1-a7c377a9edc2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Echecs/Affichage.class" afterPath="$PROJECT_DIR$/out/production/Echecs/Affichage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Echecs/Cavalier.class" afterPath="$PROJECT_DIR$/out/production/Echecs/Cavalier.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Echecs/Fou.class" afterPath="$PROJECT_DIR$/out/production/Echecs/Fou.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Echecs/Pion.class" afterPath="$PROJECT_DIR$/out/production/Echecs/Pion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Echecs/Reine.class" afterPath="$PROJECT_DIR$/out/production/Echecs/Reine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Echecs/Roi.class" afterPath="$PROJECT_DIR$/out/production/Echecs/Roi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Echecs/Tour.class" afterPath="$PROJECT_DIR$/out/production/Echecs/Tour.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Echecs/Plateau.class" afterPath="$PROJECT_DIR$/out/production/Echecs/Plateau.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Affichage.java" afterPath="$PROJECT_DIR$/src/Affichage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cavalier.java" afterPath="$PROJECT_DIR$/src/Cavalier.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Fou.java" afterPath="$PROJECT_DIR$/src/Fou.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Pion.java" afterPath="$PROJECT_DIR$/src/Pion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Plateau.java" afterPath="$PROJECT_DIR$/src/Plateau.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Reine.java" afterPath="$PROJECT_DIR$/src/Reine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Roi.java" afterPath="$PROJECT_DIR$/src/Roi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tour.java" afterPath="$PROJECT_DIR$/src/Tour.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Piece.java" afterPath="$PROJECT_DIR$/src/Piece.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,31 +28,7 @@
     <favorites_list name="Echecs" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Pion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Pion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-              <folding>
-                <element signature="e#94#95#0" expanded="true" />
-                <element signature="e#118#119#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Plateau.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Plateau.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -88,7 +51,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Piece.java" />
         <option value="$PROJECT_DIR$/src/Affichage.java" />
         <option value="$PROJECT_DIR$/src/Pion.java" />
         <option value="$PROJECT_DIR$/src/Tour.java" />
@@ -98,6 +60,7 @@
         <option value="$PROJECT_DIR$/src/Roi.java" />
         <option value="$PROJECT_DIR$/src/Reine.java" />
         <option value="$PROJECT_DIR$/src/Plateau.java" />
+        <option value="$PROJECT_DIR$/src/Piece.java" />
       </list>
     </option>
   </component>
@@ -762,7 +725,7 @@
       <workItem from="1494855412076" duration="590000" />
       <workItem from="1494951739272" duration="618000" />
       <workItem from="1494963958508" duration="799000" />
-      <workItem from="1494964859404" duration="2638000" />
+      <workItem from="1494964859404" duration="5629000" />
     </task>
     <task id="LOCAL-00001" summary="A">
       <created>1494361499310</created>
@@ -869,11 +832,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494964540702</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Optimisations">
+      <created>1494967514670</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1494967514670</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19684000" />
+    <option name="totallyTimeSpent" value="22675000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -886,7 +856,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -903,7 +872,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -936,7 +905,8 @@
     <MESSAGE value="Debug" />
     <MESSAGE value="A" />
     <MESSAGE value="Scanner" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scanner" />
+    <MESSAGE value="Optimisations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimisations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1180,14 +1150,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Piece.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tour.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1269,6 +1231,14 @@
             <element signature="e#94#95#0" expanded="true" />
             <element signature="e#118#119#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Piece.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>

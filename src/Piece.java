@@ -4,8 +4,8 @@
 public class Piece {
     public boolean couleur;
     public int type = 0;
-    public Piece(boolean couleur0,int type0){
-        couleur = couleur0;
-        type = type0;
+    public Piece(boolean couleur,int type){
+        this.couleur = couleur;
+        this.type = type;
     }
 }
