@@ -3,6 +3,6 @@
  */
 public class Tour extends Piece{
     public Tour(boolean couleur){
-        super(couleur,6);
+        super(couleur,2);
     }
 }

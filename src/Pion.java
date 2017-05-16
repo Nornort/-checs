@@ -4,6 +4,6 @@
 
 public class Pion extends Piece {
 	public Pion (boolean couleur){
-		super(couleur, 5);		
+		super(couleur, 1);
 	}
 }

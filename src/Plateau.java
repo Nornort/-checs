@@ -12,9 +12,10 @@ public class Plateau {
         }
         for (int i = 0; i < 8; i += 7) {
             boolean couleur = false;
-            int k = 0;
             if(i == 7) couleur = true;
-            if (i == 7) k = 1;
+            for (int j = 0; j < 8; j ++) {
+                plateau[i + 1 - (i % 5)][j] = new Pion(couleur);
+            }
             for (int j = 0; j < 8; j += 7) {
                 plateau[i][j] = new Tour(couleur);
             }
@@ -24,8 +25,8 @@ public class Plateau {
             for (int j = 2; j < 6; j += 3) {
                 plateau[i][j] = new Fou(couleur);
             }
-            plateau[i][3 + k] = new Roi(couleur);
-            plateau[i][4 - k] = new Reine(couleur);
+            plateau[i][3 + (i % 6)] = new Roi(couleur);
+            plateau[i][4 - (i % 6)] = new Reine(couleur);
         }
     }
 }
