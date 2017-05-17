@@ -6,6 +6,7 @@ public class Affichage {
         for(int i=0;i<8;i++){
             for(int j=0;j<8;j++){
                 System.out.print("|");
+                if(tableau[i][j].couleur == false) System.out.print(getRouge());
                 switch(tableau[i][j].type){
                     case 0:
                         System.out.print("  ");
@@ -28,9 +29,16 @@ public class Affichage {
                     case 6:
                         System.out.print("Ro");
                 }
+                System.out.print(getBlanc());
             }
             System.out.println("|");
         }
         System.out.println("Quelle pièce voulez vous déplacer ?");
+    }
+    public static String getRouge() {
+        return "\033[31m";
+    }
+    public static String getBlanc() {
+        return "\033[0m";
     }
 }
