@@ -7,29 +7,7 @@ public class Affichage {
             for(int j=0;j<8;j++){
                 System.out.print("|");
                 if(tableau[i][j].couleur == false) System.out.print(getRouge());
-                switch(tableau[i][j].type){
-                    case 0:
-                        System.out.print("  ");
-                        break;
-                    case 1:
-                        System.out.print("Pi");
-                        break;
-                    case 2:
-                        System.out.print("To");
-                        break;
-                    case 3:
-                        System.out.print("Ca");
-                        break;
-                    case 4:
-                        System.out.print("Fo");
-                        break;
-                    case 5:
-                        System.out.print("Re");
-                        break;
-                    case 6:
-                        System.out.print("Ro");
-                }
-                System.out.print(getBlanc());
+                System.out.print(tableau[i][j].type + getBlanc());
             }
             System.out.println("|");
         }

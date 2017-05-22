@@ -3,6 +3,6 @@
  */
 public class Cavalier extends Piece{
     public Cavalier(boolean couleur){
-        super(couleur,3);
+        super(couleur,"Ca");
     }
 }

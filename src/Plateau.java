@@ -7,7 +7,7 @@ public class Plateau {
     public Plateau() {
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j ++) {
-                plateau[i][j] = new Piece(false, 0);
+                plateau[i][j] = new Piece(false, "  ");
             }
         }
         for (int i = 0; i < 8; i += 7) {

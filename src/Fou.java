@@ -3,6 +3,6 @@
  */
 public class Fou extends Piece{
     public Fou(boolean couleur){
-        super(couleur,4);
+        super(couleur,"Fo");
     }
 }
