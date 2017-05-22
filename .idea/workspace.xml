@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1892af0f-dcff-407b-bda1-a7c377a9edc2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echecs.iml" afterPath="$PROJECT_DIR$/Echecs.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Affichage.java" afterPath="$PROJECT_DIR$/src/Affichage.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -760,7 +757,7 @@
       <workItem from="1495435710113" duration="1771000" />
       <workItem from="1495459413955" duration="106000" />
       <workItem from="1495459559540" duration="122000" />
-      <workItem from="1495469407360" duration="408000" />
+      <workItem from="1495469407360" duration="531000" />
     </task>
     <task id="LOCAL-00001" summary="A">
       <created>1494361499310</created>
@@ -874,11 +871,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494967514670</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Optimisations">
+      <created>1495469916555</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1495469916555</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31632000" />
+    <option name="totallyTimeSpent" value="31755000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
