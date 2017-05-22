@@ -7,7 +7,7 @@ public class Affichage {
             for(int j=0;j<8;j++){
                 System.out.print("|");
                 if(!tableau[i][j].couleur) System.out.print(getRouge());
-                System.out.print(tableau[i][j].type + getBlanc());
+                System.out.print(tableau[i][j].type + getNormal());
             }
             System.out.println("|");
         }
@@ -16,7 +16,7 @@ public class Affichage {
     public static String getRouge() {
         return "\033[31m";
     }
-    public static String getBlanc() {
+    public static String getNormal() {
         return "\033[0m";
     }
 }
