@@ -21,5 +21,10 @@ public class Echecs {
             if(!piece.type.déplacementPossible()) System.out.println("Ce déplacement est impossible !");
         }
         */
+        if (piece.deplacementPossible == true){
+            tableau[M][N]=0;
+            tableau[P][Q]= typePiece;
+        }   
+            
     }
 }
