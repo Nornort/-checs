@@ -1,7 +1,7 @@
 /**
  * Created by francois on 15/05/17.
  */
-public class Plateau extends Affichage {
+public class Plateau {
     public Piece[][] plateau = new Piece[8][8];
 
     public Plateau() {
@@ -32,7 +32,7 @@ public class Plateau extends Affichage {
     public boolean pieceExiste(String piece){
         for(int i = 0;i < 8;i++){
             for(int j = 0;j < 8;j++){
-                if(piece.equals(plateau[i][j].type)) return true;
+                if(piece.equals(plateau[i][j].type) && !piece.equals("  ")) return true;
             }
         }
         return false;

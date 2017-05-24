@@ -2,12 +2,12 @@
  * Created by francois on 15/05/17.
  */
 public class Affichage {
-    public void afficher(Piece[][] tableau){
+    public static void afficher(Piece[][] plateau){
         for(int i=0;i<8;i++){
             for(int j=0;j<8;j++){
                 System.out.print("|");
-                if(!tableau[i][j].couleur) System.out.print(getRouge());
-                System.out.print(tableau[i][j].type + getNormal());
+                if(!plateau[i][j].couleur) System.out.print(getRouge());
+                System.out.print(plateau[i][j].type + getNormal());
             }
             System.out.println("|");
         }
