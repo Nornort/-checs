@@ -2,6 +2,12 @@
  * Created by francois on 15/05/17.
  */
 public class Fou extends Piece{
+	
+    /** 
+    * Constructeur de la classe cavalier
+    * @param Prend en parametre la couleur de la tour
+    * 
+    */	
     public Fou(boolean couleur){
         super(couleur,"Fo");
            public boolean DeplacementPossible (int M; int N; int P; int Q)
