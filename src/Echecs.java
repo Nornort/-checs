@@ -18,7 +18,7 @@ public class Echecs {
         while(!piece.deplacementPossible()){
             System.out.println("Où cette pièce doit-elle aller ?");
             String str = sc.nextLine();
-            if(!piece.type.déplacementPossible()) System.out.println("Ce déplacement est impossible !");
+            if(!piece.type.deplacementPossible(numeroPiece, caseDeplacement)) System.out.println("Ce déplacement est impossible !");
         }
         */
     }
