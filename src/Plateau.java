@@ -2,6 +2,7 @@
  * Created by francois on 15/05/17.
  */
 public class Plateau {
+    public static String lignes = "ABCDEFGH";
     public Piece[][] plateau = new Piece[8][8];
 
     public Plateau() {

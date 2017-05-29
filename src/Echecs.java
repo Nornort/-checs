@@ -13,18 +13,13 @@ public class Echecs {
             typePiece = sc.nextLine();
             if(!jeu.pieceExiste(typePiece)) System.out.println("Cette pièce n'est pas disponible !");
         }
-        String deplacement = "0";
         /*
+        String deplacement = "0";
         while(!piece.deplacementPossible()){
             System.out.println("Où cette pièce doit-elle aller ?");
             String str = sc.nextLine();
             if(!piece.type.deplacementPossible(numeroPiece, caseDeplacement)) System.out.println("Ce déplacement est impossible !");
         }
         */
-        if (piece.deplacementPossible == true){
-            tableau[M][N]=0;
-            tableau[P][Q]= typePiece;
-        }   
-            
     }
 }
