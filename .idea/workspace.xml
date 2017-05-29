@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1892af0f-dcff-407b-bda1-a7c377a9edc2" name="Default" comment="Optimisations">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Coordonnees.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Deplacement.java" />
+    <list default="true" id="1892af0f-dcff-407b-bda1-a7c377a9edc2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Echecs/Affichage.class" afterPath="$PROJECT_DIR$/out/production/Echecs/Affichage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Echecs/Cavalier.class" afterPath="$PROJECT_DIR$/out/production/Echecs/Cavalier.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Echecs/Echecs.class" afterPath="$PROJECT_DIR$/out/production/Echecs/Echecs.class" />
@@ -11,16 +9,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Echecs/Plateau.class" afterPath="$PROJECT_DIR$/out/production/Echecs/Plateau.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Echecs/Tour.class" afterPath="$PROJECT_DIR$/out/production/Echecs/Tour.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Affichage.java" afterPath="$PROJECT_DIR$/src/Affichage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cavalier.java" afterPath="$PROJECT_DIR$/src/Cavalier.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Echecs.java" afterPath="$PROJECT_DIR$/src/Echecs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Fou.java" afterPath="$PROJECT_DIR$/src/Fou.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Piece.java" afterPath="$PROJECT_DIR$/src/Piece.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Pion.java" afterPath="$PROJECT_DIR$/src/Pion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Plateau.java" afterPath="$PROJECT_DIR$/src/Plateau.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Reine.java" afterPath="$PROJECT_DIR$/src/Reine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Roi.java" afterPath="$PROJECT_DIR$/src/Roi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tour.java" afterPath="$PROJECT_DIR$/src/Tour.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -790,7 +778,7 @@
       <workItem from="1495843648954" duration="833000" />
       <workItem from="1495844580726" duration="776000" />
       <workItem from="1496004766083" duration="3913000" />
-      <workItem from="1496012820237" duration="9038000" />
+      <workItem from="1496012820237" duration="9084000" />
     </task>
     <task id="LOCAL-00001" summary="A">
       <created>1494361499310</created>
@@ -946,11 +934,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495844466588</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Améliorations">
+      <created>1496021890972</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1496021890972</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60793000" />
+    <option name="totallyTimeSpent" value="60839000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1013,7 +1008,8 @@
     <MESSAGE value="A" />
     <MESSAGE value="Scanner" />
     <MESSAGE value="Optimisations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimisations" />
+    <MESSAGE value="Améliorations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Améliorations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
