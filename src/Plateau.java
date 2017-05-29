@@ -30,11 +30,21 @@ public class Plateau {
             plateau[i][4 - (i % 6)] = new Reine(couleur);
         }
     }
-    public boolean pieceExiste(String piece){
-        for(int i = 0;i < 8;i++){
-            for(int j = 0;j < 8;j++){
-                if(piece.equals(plateau[i][j].type) && !piece.equals("  ")) return true;
-            }
+    public boolean pieceExiste(String caseDepart){
+        int ligneDepart = Plateau.lignes.indexOf(caseDepart.charAt(0));
+        int colonneDepart = Character.getNumericValue(caseDepart.charAt(1));
+        if(!plateau[ligneDepart][colonneDepart].type.equals("  ")) return true;
+        return false;
+    }
+    public boolean deplacer(String caseDepart, String caseArrivee){
+        int ligneDepart = Plateau.lignes.indexOf(caseDepart.charAt(0));
+        int colonneDepart = Character.getNumericValue(caseDepart.charAt(1));
+        int ligneArrivee = Plateau.lignes.indexOf(caseArrivee.charAt(0));
+        int colonneArrivee = Character.getNumericValue(caseArrivee.charAt(1));
+        Deplacement mouvement = new Deplacement(new Coordonnees(ligneDepart,colonneDepart),new Coordonnees(ligneArrivee,colonneArrivee));
+        if(plateau[ligneDepart][colonneDepart].deplacementPossible(mouvement)){
+            plateau[ligneArrivee][colonneArrivee] = plateau[ligneDepart][colonneDepart];
+            plateau[ligneDepart][colonneDepart] = new Piece(false, "  ");
         }
         return false;
     }
