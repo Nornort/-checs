@@ -45,6 +45,7 @@ public class Plateau {
         if(plateau[ligneDepart][colonneDepart].deplacementPossible(mouvement)){
             plateau[ligneArrivee][colonneArrivee] = plateau[ligneDepart][colonneDepart];
             plateau[ligneDepart][colonneDepart] = new Piece(false, "  ");
+            return true;
         }
         return false;
     }
