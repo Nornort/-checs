@@ -27,11 +27,11 @@ public class Deplacement {
 
 
     //getter
-    public double getdL(){
+    public int getdL(){
         return dL;
     }
 
-    public double getdC(){
+    public int getdC(){
         return dC;
     }
 

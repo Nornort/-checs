@@ -42,9 +42,9 @@ public class Plateau {
         int ligneArrivee = Plateau.lignes.indexOf(caseArrivee.charAt(0));
         int colonneArrivee = Character.getNumericValue(caseArrivee.charAt(1));
         Deplacement mouvement = new Deplacement(new Coordonnees(ligneDepart,colonneDepart),new Coordonnees(ligneArrivee,colonneArrivee));
-        if(plateau[ligneDepart][colonneDepart].deplacementPossible(mouvement)){
+        if(plateau[ligneDepart][colonneDepart].deplacementAutorise(plateau,mouvement)){
             plateau[ligneArrivee][colonneArrivee] = plateau[ligneDepart][colonneDepart];
-            plateau[ligneDepart][colonneDepart] = new Piece(false, "  ");
+            if(mouvement.getdL() != 0 && mouvement.getdC() != 0) plateau[ligneDepart][colonneDepart] = new Piece(false, "  ");
             return true;
         }
         return false;

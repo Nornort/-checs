@@ -10,7 +10,7 @@ public class Fou extends Piece{
     public Fou(boolean couleur){super(couleur,"Fo");}
 
     public boolean deplacementPossible(Deplacement mouvement){
-        if((Math.abs(mouvement.getdL())) - (Math.abs(mouvement.getdC())) == 0) return true;
+        if(Math.abs(mouvement.getdL()) - Math.abs(mouvement.getdC()) == 0) return true;
         return false;
     }
 }
