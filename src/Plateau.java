@@ -44,7 +44,7 @@ public class Plateau {
         Deplacement mouvement = new Deplacement(new Coordonnees(ligneDepart,colonneDepart),new Coordonnees(ligneArrivee,colonneArrivee));
         if(plateau[ligneDepart][colonneDepart].deplacementAutorise(plateau,mouvement)){
             plateau[ligneArrivee][colonneArrivee] = plateau[ligneDepart][colonneDepart];
-            if(mouvement.getdL() != 0 && mouvement.getdC() != 0) plateau[ligneDepart][colonneDepart] = new Piece(false, "  ");
+            plateau[ligneDepart][colonneDepart] = new Piece(false, "  ");
             return true;
         }
         return false;
