@@ -26,4 +26,5 @@ public class Piece {
         }
         return false;
     }
+    public boolean promotion(Deplacement mouvement){return false;}
 }

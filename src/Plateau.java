@@ -48,6 +48,7 @@ public class Plateau {
         if(plateau[ligneDepart][colonneDepart].deplacementAutorise(plateau,mouvement)){
             plateau[ligneArrivee][colonneArrivee] = plateau[ligneDepart][colonneDepart];
             plateau[ligneDepart][colonneDepart] = new Piece(false, "  ");
+            if(plateau[ligneArrivee][colonneArrivee].promotion(mouvement)) plateau[ligneArrivee][colonneArrivee] = new Reine(plateau[ligneArrivee][colonneArrivee].couleur);
             return true;
         }
         return false;

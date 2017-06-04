@@ -5,9 +5,8 @@ public class Pion extends Piece {
     // déplacement propre du pion //
     public boolean deplacementPossible(Deplacement mouvement) {
         if(mouvement.getdC() == 0){
-            if(!this.couleur){
-                if(mouvement.getdL() <= (mouvement.getDepart().getLigne() == 1 ? 2 : 1) && mouvement.getdL() > 0) return true;
-            }else if(mouvement.getdL() >= (mouvement.getDepart().getLigne() == 6 ? -2 : -1) && mouvement.getdL() < 0) return true;
+            if(!this.couleur && mouvement.getdL() <= (mouvement.getDepart().getLigne() == 1 ? 2 : 1) && mouvement.getdL() > 0) return true;
+            else if(this.couleur && mouvement.getdL() >= (mouvement.getDepart().getLigne() == 6 ? -2 : -1) && mouvement.getdL() < 0) return true;
         }
         return false;
     }
@@ -19,11 +18,15 @@ public class Pion extends Piece {
                 if(!plateau[mouvement.getDepart().getLigne() + i*Integer.signum(mouvement.getdL())][mouvement.getDepart().getColonne()].type.equals("  ")) return false;
             }
             return true;
-        }else if(Math.abs(mouvement.getdL()) == 1 && Math.abs(mouvement.getdC()) == 1 && !plateau[mouvement.getArrivee().getLigne()][mouvement.getArrivee().getColonne()].type.equals("  ")){
-            if(!this.couleur){
-                if(mouvement.getdL() > 0) return true;
-            }else if(mouvement.getdL() < 0) return true;
+        }else if(Math.abs(mouvement.getdL()) == 1 && Math.abs(mouvement.getdC()) == 1 && !plateau[mouvement.getArrivee().getLigne()][mouvement.getArrivee().getColonne()].type.equals("  ")) {
+            if(!this.couleur && mouvement.getdL() > 0) return true;
+            else if(this.couleur && mouvement.getdL() < 0) return true;
         }
+        return false;
+    }
+    public boolean promotion(Deplacement mouvement){
+        if(!this.couleur && mouvement.getArrivee().getLigne() == 7) return true;
+        else if(this.couleur && mouvement.getArrivee().getLigne() == 0) return true;
         return false;
     }
 }
