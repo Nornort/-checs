@@ -1,6 +1,4 @@
-/**
- * Created by francois on 15/05/17.
- */
+//pièce de type reine prenant en compte ses déplacements propres//
 public class Reine extends Piece{
     public Reine(boolean couleur){super(couleur,"Re");}
     public boolean deplacementPossible(Deplacement mouvement){
