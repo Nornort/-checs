@@ -1,10 +1,9 @@
-/**
- * Created by francois on 15/05/17.
- */
+//création du plateau//
 public class Plateau {
     public static String lignes = "ABCDEFGH";
     public Piece[][] plateau = new Piece[8][8];
 
+    //initialisation des pièces du plateau//
     public Plateau() {
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j ++) {
@@ -30,12 +29,16 @@ public class Plateau {
             plateau[i][4 - (i % 6)] = new Reine(couleur);
         }
     }
+    
+    //renvoi "true" si la case d'arrivée est vide//
     public boolean pieceExiste(String caseDepart){
         int ligneDepart = Plateau.lignes.indexOf(caseDepart.charAt(0));
         int colonneDepart = Character.getNumericValue(caseDepart.charAt(1));
         if(!plateau[ligneDepart][colonneDepart].type.equals("  ")) return true;
         return false;
     }
+    
+    //renvoi "true" et fais le déplacement si celui-ci est autorisé par la méthode "deplacementAutoriseé"//
     public boolean deplacer(String caseDepart, String caseArrivee){
         int ligneDepart = Plateau.lignes.indexOf(caseDepart.charAt(0));
         int colonneDepart = Character.getNumericValue(caseDepart.charAt(1));
