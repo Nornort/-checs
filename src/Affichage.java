@@ -1,6 +1,7 @@
 /**
  * Created by francois on 15/05/17.
  */
+ // affiche le plateau avec des couleurs//
 public class Affichage {
     public static void afficher(Piece[][] plateau){
         for(int i=0;i<8;i++){

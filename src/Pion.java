@@ -2,6 +2,7 @@
 public class Pion extends Piece {
     public Pion(boolean couleur) {super(couleur, "Pi");}
 
+    // déplacement propre du pion //
     public boolean deplacementPossible(Deplacement mouvement) {
         if(mouvement.getdC() == 0){
             if(!this.couleur){
