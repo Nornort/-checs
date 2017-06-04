@@ -5,10 +5,10 @@ public class Echecs {
         Plateau jeu = new Plateau();
         boolean couleur = false;
        // Annonce à qui est le tour//
-        while(true){
+        while(!jeu.roiMange()){
             Affichage.afficher(jeu.plateau);
             couleur = !couleur;
-            System.out.println("Au tour des " + (couleur ? "Blancs." : "Rouges."));
+            System.out.println("Au tour des " + (couleur ? "blancs." : "rouges."));
             String caseDepart = "0";
             // Demande des coordonnées de départ //
             while(true){
@@ -27,5 +27,6 @@ public class Echecs {
                 else break;
             }
         }
+        System.out.println("Jeu terminé ! Les " + (jeu.gagnant() ? "blancs" : "rouges") + " ont gagné !");
     }
 }

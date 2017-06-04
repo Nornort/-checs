@@ -53,4 +53,23 @@ public class Plateau {
         }
         return false;
     }
+    public boolean roiMange(){
+        int n = 0;
+        for(int i=0;i<8;i++){
+            for(int j=0;j<8;j++){
+                if(plateau[i][j].type.equals("Ro")) n++;
+            }
+        }
+        if(n < 2) return true;
+        return false;
+    }
+    public boolean gagnant(){
+        int n = 0;
+        for(int i=0;i<8;i++){
+            for(int j=0;j<8;j++){
+                if(plateau[i][j].type.equals("Ro")) return plateau[i][j].couleur;
+            }
+        }
+        return false;
+    }
 }
