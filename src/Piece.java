@@ -9,7 +9,7 @@ public class Piece {
         this.type = type;
     }
     public boolean deplacementPossible(Deplacement mouvement){return false;}
-    // Renvoi true si le déplacement est autorisé //
+    //Renvoie true si le déplacement est autorisé
     public boolean deplacementAutorise(Piece[][] plateau,Deplacement mouvement){
         // Interdit de déplacer une pièce sur la même case//
         if(mouvement.getdL() == 0 && mouvement.getdC() == 0) return false;

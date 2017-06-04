@@ -4,9 +4,9 @@
 public class Fou extends Piece{
 	
     /*
-        Constructeur de la classe cavalier
-        @param Prend en parametre la couleur de la tour
-	Renvoi si le déplacement propre au Fou est respecté
+        Constructeur de la classe Fou
+        @param Prend en parametre la couleur du Fou
+	    La méthode renvoie si le déplacement propre au Fou est respecté
     */	
     public Fou(boolean couleur){super(couleur,"Fo");}
 

@@ -4,9 +4,9 @@
 public class Cavalier extends Piece{
 
     /*
-	    Constructeur de la classe cavalier
-	    @param Prend en parametre la couleur de la tour
-	    Renvoi si le déplacement propre au Cavalier est respecté
+	    Constructeur de la classe Cavalier
+	    @param Prend en parametre la couleur du Cavalier
+	    La méthode renvoie si le déplacement propre au Cavalier est respecté
 	*/
     public Cavalier(boolean couleur){super(couleur,"Ca");}
     public boolean deplacementPossible(Deplacement mouvement){

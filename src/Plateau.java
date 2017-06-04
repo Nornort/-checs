@@ -1,9 +1,9 @@
 //création du plateau//
 public class Plateau {
     public static String lignes = "ABCDEFGH";
+    //Création du plateau
     public Piece[][] plateau = new Piece[8][8];
-
-    //initialisation des pièces du plateau//
+    //Initialisation des pièces sur le plateau
     public Plateau() {
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j ++) {
@@ -30,7 +30,7 @@ public class Plateau {
         }
     }
     
-    //renvoi "true" si la case d'arrivée est vide//
+    //Renvoie "true" si la case de départ sélectionnée n'est pas vide et est de la bonne couleur
     public boolean pieceExiste(String caseDepart, boolean couleur){
         int ligneDepart = Plateau.lignes.indexOf(caseDepart.charAt(0));
         int colonneDepart = Character.getNumericValue(caseDepart.charAt(1));
@@ -38,12 +38,14 @@ public class Plateau {
         return false;
     }
     
-    //renvoi "true" et fais le déplacement si celui-ci est autorisé par la méthode "deplacementAutoriseé"//
+    //Renvoie "true" et fais le déplacement si celui-ci est autorisé par la méthode "deplacementAutoriseé" de la pièce concernée
     public boolean deplacer(String caseDepart, String caseArrivee){
+        //Extraction des données entrées par l'utilisateur
         int ligneDepart = Plateau.lignes.indexOf(caseDepart.charAt(0));
         int colonneDepart = Character.getNumericValue(caseDepart.charAt(1));
         int ligneArrivee = Plateau.lignes.indexOf(caseArrivee.charAt(0));
         int colonneArrivee = Character.getNumericValue(caseArrivee.charAt(1));
+        //Création d'une variable de type Deplacement plus simple à manipuler
         Deplacement mouvement = new Deplacement(new Coordonnees(ligneDepart,colonneDepart),new Coordonnees(ligneArrivee,colonneArrivee));
         if(plateau[ligneDepart][colonneDepart].deplacementAutorise(plateau,mouvement)){
             plateau[ligneArrivee][colonneArrivee] = plateau[ligneDepart][colonneDepart];
@@ -53,6 +55,7 @@ public class Plateau {
         }
         return false;
     }
+    //Vérifie si l'un des deux rois est mangé
     public boolean roiMange(){
         int n = 0;
         for(int i=0;i<8;i++){
@@ -63,6 +66,7 @@ public class Plateau {
         if(n < 2) return true;
         return false;
     }
+    //Le camp qui conserve son roi à la fin gagne la partie
     public boolean gagnant(){
         int n = 0;
         for(int i=0;i<8;i++){
