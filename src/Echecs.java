@@ -7,11 +7,13 @@ public class Echecs {
         Scanner sc = new Scanner(System.in);
         Plateau jeu = new Plateau();
         boolean couleur = false;
+       // Annonce à qui est le tour//
         while(true){
             Affichage.afficher(jeu.plateau);
             couleur = !couleur;
             System.out.println("Au tour des " + (couleur ? "Blancs." : "Rouges."));
             String caseDepart = "0";
+            // Demande des coordonnées de départ et d'arrivée et réitère l'opération tant que le déplacement est impossible//
             while(true){
                 do{
                     System.out.println("Quelle pièce voulez vous déplacer ?");
