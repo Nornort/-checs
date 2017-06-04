@@ -1,10 +1,10 @@
 //création du plateau//
-public class Plateau {
-    public static String lignes = "ABCDEFGH";
+class Plateau {
+    static String lignes = "ABCDEFGH";
     //Création du plateau
-    public Piece[][] plateau = new Piece[8][8];
+    Piece[][] plateau = new Piece[8][8];
     //Initialisation des pièces sur le plateau
-    public Plateau() {
+    Plateau() {
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j ++) {
                 plateau[i][j] = new Piece(false, "  ");
@@ -31,7 +31,7 @@ public class Plateau {
     }
     
     //Renvoie "true" si la case de départ sélectionnée n'est pas vide et est de la bonne couleur
-    public boolean pieceExiste(String caseDepart, boolean couleur){
+    boolean pieceExiste(String caseDepart, boolean couleur){
         int ligneDepart = Plateau.lignes.indexOf(caseDepart.charAt(0));
         int colonneDepart = Character.getNumericValue(caseDepart.charAt(1));
         if(!plateau[ligneDepart][colonneDepart].type.equals("  ") && plateau[ligneDepart][colonneDepart].couleur == couleur) return true;
@@ -39,7 +39,7 @@ public class Plateau {
     }
     
     //Renvoie "true" et fais le déplacement si celui-ci est autorisé par la méthode "deplacementAutoriseé" de la pièce concernée
-    public boolean deplacer(String caseDepart, String caseArrivee){
+    boolean deplacer(String caseDepart, String caseArrivee){
         //Extraction des données entrées par l'utilisateur
         int ligneDepart = Plateau.lignes.indexOf(caseDepart.charAt(0));
         int colonneDepart = Character.getNumericValue(caseDepart.charAt(1));
@@ -56,7 +56,7 @@ public class Plateau {
         return false;
     }
     //Vérifie si l'un des deux rois est mangé
-    public boolean roiMange(){
+    boolean roiMange(){
         int n = 0;
         for(int i=0;i<8;i++){
             for(int j=0;j<8;j++){
@@ -67,7 +67,7 @@ public class Plateau {
         return false;
     }
     //Le camp qui conserve son roi à la fin gagne la partie
-    public boolean gagnant(){
+    boolean gagnant(){
         int n = 0;
         for(int i=0;i<8;i++){
             for(int j=0;j<8;j++){

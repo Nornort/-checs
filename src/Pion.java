@@ -1,6 +1,6 @@
 
 public class Pion extends Piece {
-    public Pion(boolean couleur) {super(couleur, "Pi");}
+    Pion(boolean couleur) {super(couleur, "Pi");}
 
     //Déplacement propre du pion
     public boolean deplacementPossible(Deplacement mouvement) {

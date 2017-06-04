@@ -1,6 +1,3 @@
-/**
- * Created by francois on 15/05/17.
- */
 public class Fou extends Piece{
 	
     /*
@@ -8,7 +5,7 @@ public class Fou extends Piece{
         @param Prend en parametre la couleur du Fou
 	    La méthode renvoie si le déplacement propre au Fou est respecté
     */	
-    public Fou(boolean couleur){super(couleur,"Fo");}
+    Fou(boolean couleur){super(couleur,"Fo");}
 
     public boolean deplacementPossible(Deplacement mouvement){
         if(Math.abs(mouvement.getdL()) - Math.abs(mouvement.getdC()) == 0) return true;

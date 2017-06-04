@@ -1,7 +1,4 @@
-/**
- * Created by francois on 29/05/17.
- */
-public class Deplacement {
+class Deplacement {
     //Coordonnées case de départ
     private Coordonnees depart;
 
@@ -18,7 +15,7 @@ public class Deplacement {
         CONSTRUCTEUR
         @param prend en paramètre les coordonnées de départ et d'arrivée
     */
-    public Deplacement (Coordonnees depart, Coordonnees arrivee){
+    Deplacement (Coordonnees depart, Coordonnees arrivee){
         this.arrivee = arrivee;
         this.depart = depart;
         this.dL = arrivee.getLigne() - depart.getLigne();
@@ -27,19 +24,19 @@ public class Deplacement {
 
 
     //getter
-    public int getdL(){
+    int getdL(){
         return dL;
     }
 
-    public int getdC(){
+    int getdC(){
         return dC;
     }
 
-    public Coordonnees getDepart(){
+    Coordonnees getDepart(){
         return depart;
     }
 
-    public Coordonnees getArrivee(){
+    Coordonnees getArrivee(){
         return arrivee;
     }
 

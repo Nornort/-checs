@@ -1,9 +1,6 @@
-/**
- * Created by francois on 15/05/17.
- */
  // affiche le plateau avec des couleurs//
-public class Affichage {
-    public static void afficher(Piece[][] plateau){
+class Affichage {
+    static void afficher(Piece[][] plateau){
         //Affiche le numéro des colonnes
         for(int i=0;i<8;i++){
             System.out.print(" |" + i);
@@ -21,6 +18,6 @@ public class Affichage {
             System.out.println("|");
         }
     }
-    public static String getRouge(){return "\033[31m";}
-    public static String getNormal(){return "\033[0m";}
+    private static String getRouge(){return "\033[31m";}
+    private static String getNormal(){return "\033[0m";}
 }

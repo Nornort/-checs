@@ -1,6 +1,3 @@
-/**
- * Created by francois on 29/05/17.
- */
 public class Coordonnees {
     private int ligne;
     private int colonne;
@@ -8,16 +5,16 @@ public class Coordonnees {
         CONSTRUCTEUR
         @param prend en paramètre les numéros de ligne et de colonne
     */
-    public Coordonnees (int ligne, int colonne){
+    Coordonnees (int ligne, int colonne){
         this.ligne = ligne;
         this.colonne = colonne;
     }
     //Getters
-    public int getLigne(){
+    int getLigne(){
         return ligne;
     }
 
-    public int getColonne(){
+    int getColonne(){
         return colonne;
     }
 

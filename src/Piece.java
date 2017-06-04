@@ -3,8 +3,8 @@
 */
 public class Piece {
     public boolean couleur = false;
-    public String type = "  ";
-    public Piece(boolean couleur,String type){
+    String type = "  ";
+    Piece(boolean couleur,String type){
         this.couleur = couleur;
         this.type = type;
     }
