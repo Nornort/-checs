@@ -31,10 +31,10 @@ public class Plateau {
     }
     
     //renvoi "true" si la case d'arrivée est vide//
-    public boolean pieceExiste(String caseDepart){
+    public boolean pieceExiste(String caseDepart, boolean couleur){
         int ligneDepart = Plateau.lignes.indexOf(caseDepart.charAt(0));
         int colonneDepart = Character.getNumericValue(caseDepart.charAt(1));
-        if(!plateau[ligneDepart][colonneDepart].type.equals("  ")) return true;
+        if(!plateau[ligneDepart][colonneDepart].type.equals("  ") && plateau[ligneDepart][colonneDepart].couleur == couleur) return true;
         return false;
     }
     
