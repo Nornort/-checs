@@ -24,6 +24,7 @@ public class Pion extends Piece {
         }
         return false;
     }
+    // transforme un pion en reine s'il atteint la ligne opposée à sa ligne initiale //
     public boolean promotion(Deplacement mouvement){
         if(!this.couleur && mouvement.getArrivee().getLigne() == 7) return true;
         else if(this.couleur && mouvement.getArrivee().getLigne() == 0) return true;
