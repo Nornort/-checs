@@ -1,6 +1,3 @@
-/**
- * Created by francois on 15/05/17.
- */
 public class Tour extends Piece{
 
     /*
@@ -8,6 +5,8 @@ public class Tour extends Piece{
 	    @param Prend en parametre la couleur de la tour
 	*/
     public Tour(boolean couleur){super(couleur,"To");}
+	/*Renvoi si le déplacement propre à la Tour est respecté
+	*/
     public boolean deplacementPossible(Deplacement mouvement){
         if((mouvement.getdL()*mouvement.getdC())==0) return true;
         return false;
